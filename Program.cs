@@ -22,7 +22,11 @@ void Main()
             break;
         }
 
-        if (int.TryParse(userInput, out int userMove)) // tryParse is used to convert the user's input to an integer if possible (three=3). if the user's input is not an integer, then the code in the else statement will be executed. if it is an integer then the code in the if statement will be executed using 'out'. out is used to pass the value of userMove back to the if statement. 
+        /* tryParse is used to convert the user's input to an integer if possible (three=3). 
+        if the user's input is not an integer, then the code in the else statement will be executed. 
+        if it is an integer then the code in the if statement will be executed using 'out'. out is used to pass the value of userMove back to the if statement. */
+        if (int.TryParse(userInput, out int userMove)) 
+        
         {
             // if the user's input is not 1, 2, or 3, then ask them to enter a valid input
             if (userMove < 1 || userMove > 3)
